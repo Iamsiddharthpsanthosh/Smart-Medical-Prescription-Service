@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link href="styles/styles3.css" rel="stylesheet" />
+    <title>MAIN</title>
+</head>
+<body>
+    <div class="button-container">
+        <input class="styled btn-pr" type="button" value="PATIENT REGISTER" id="PR">
+        <input class="styled btn-doc" type="button" value="DOCTOR" id="D">
+        <input class="styled btn-pat" type="button" value="PATIENT" id="P">
+        <input class="styled btn-dc" type="button" value="DIAGNOSTIC CENTER" id="DC">
+        <input class="styled btn-pv" type="button" value="PHARMACY VIEW" id="PV">
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("PR").onclick = function () {
+            location.href = "patient_register.html";
+        };
+        document.getElementById("D").onclick = function () {
+            location.href = "patientid.html";
+        };
+        document.getElementById("P").onclick = function () {
+            location.href = "patient.html";
+        };
+        document.getElementById("DC").onclick = function () {
+            location.href = "diagonostic_center.html";
+        };
+        document.getElementById("PV").onclick = function () {
+            location.href = "pv.html";
+        };
+    </script>
+</body>
+</html>
+
+
