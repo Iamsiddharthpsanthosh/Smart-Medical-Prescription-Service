@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link href="styles/styles5.css" rel="stylesheet">
+
+    <meta charset="UTF-8"/>
+    <title>Diagnostic Report View</title>
+
+    <style>
+      body {
+        background-color: #87CEEB;
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        color: #126180;
+        text-align: center;
+        font-size: 36px;
+        padding: 20px;
+      }
+      
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .panel-body {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      
+      label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    
+      input[type="submit"] {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #126180;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1>Diagnostic Report View</h1>
+    <h2>Enter Patient ID</h2>
+
+    <div class="panel-body">
+      <form action="connect2.php" method="post">
+        <div class="form-group">
+          <label for="patientid">ID:</label>
+          <input type="text" id="patientid" name="patientid" required>
+        </div>
+      </form>
+    </div>
+    
+    <div class="panel-body">
+      <form action="connect2.php" method="post">
+        <div class="form-group">
+          <label for="report">Report:</label>
+          <input type="text" id="report" name="report" required>
+        </div>
+      </form>
+    </div>
+
+    <input type="submit" value="Submit">
+  </body>
+</html>
